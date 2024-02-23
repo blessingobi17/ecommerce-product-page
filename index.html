@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <!-- Nav Html -->
+    <header>
+      <nav>
+        <div class="menu">
+          <img src="images/icon-menu.svg" class="hamburger" />
+          <div><img src="images/logo.svg" /></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="nav-menu">
+          <div>
+            <ul class="nav-list">
+              <div><img src="images/icon-close.svg" class="closeIcon" /></div>
+              <a href=""><li>Collections</li></a>
+              <a href=""><li>Men</li></a>
+              <a href=""><li>Women</li></a>
+              <a href=""><li>About</li></a>
+              <a href=""><li>Contact</li></a>
+            </ul>
+          </div>
+          <!-- Cart Html -->
+          <div class="cart-menu">
+            <div class="cart-bg">
+              <img src="images/icon-cart.svg" class="cart" />
+              <p class="topCart-number"></p>
+            </div>
+            <img src="images/image-avatar.png" class="avatar" />
+            <div class="cart-overlay">
+              <h4>Cart</h4>
+              <div class="cart-content">
+                <div class="cart-overlay-body">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    class="cart-image"
+                  />
+                  <div class="cart-overlay-text">
+                    <p class="item-name">Fall Limited Edition Sneakers</p>
+                    <div class="cart-amount">
+                      <p>$125.00 x <span class="item-quantity"></span></p>
+                      <p class="item-price"></p>
+                    </div>
+                  </div>
+                  <div><img src="images/icon-delete.svg" class="delete" /></div>
+                </div>
+                <div class="checkout"><button>Checkout</button></div>
+              </div>
+              <div class="emptyCart">
+                <p>Your cart is empty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Body Html -->
+    <div class="container">
+      <div class="imageProduct-bg">
+        <div>
+          <img src="images/image-product-1.jpg" class="imageProduct1" />
+        </div>
+        <div class="imageThumbnails">
+          <div class="thumbnail1 thumbnails"></div>
+          <div class="thumbnail2 thumbnails"></div>
+          <div class="thumbnail3 thumbnails"></div>
+          <div class="thumbnail4 thumbnails"></div>
+        </div>
+        <!-- Carousel Html -->
+        <div class="body-overlay"></div>
+        <div class="carousel">
+          <img src="images/icon-close.svg" id="closeCarousel" />
+          <div class="carousel-bg">
+            <div class="image-bg">
+              <div>
+                <img
+                  src="images/image-product-1.jpg"
+                  class="imageProduct-one"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/image-product-2.jpg"
+                  class="imageProduct-two"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/image-product-3.jpg"
+                  class="imageProduct-three"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/image-product-4.jpg"
+                  class="imageProduct-four"
+                />
+              </div>
+            </div>
+            <div class="carousel-buttons">
+              <div class="previous-btn">
+                <img src="images/icon-previous.svg" class="previous" />
+              </div>
+              <div class="next-btn">
+                <img src="images/icon-next.svg" class="next" />
+              </div>
+            </div>
+          </div>
+          <div class="imageThumbnails carousel-pagination">
+            <div id="pagination1" class="thumbnails"></div>
+            <div id="pagination2" class="thumbnails"></div>
+            <div id="pagination3" class="thumbnails"></div>
+            <div id="pagination4" class="thumbnails"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Body text Html -->
+      <section>
+        <div class="sneakerInfo">
+          <div class="headerInfo">
+            <p class="company">Sneaker Company</p>
+            <p class="name">Fall Limited Edition Sneakers</p>
+            <p class="body">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+          <div class="priceInfo">
+            <div class="price">
+              <h2>$125.00</h2>
+              <span>50%</span>
+            </div>
+            <h5>$250.00</h5>
+          </div>
+          <div class="addToCart-bg">
+            <div class="plusMinus-btn">
+              <div class="minus"><img src="images/icon-minus.svg" /></div>
+              <p class="cartNumber">0</p>
+              <div class="plus"><img src="images/icon-plus.svg" /></div>
+            </div>
+            <button class="addToCart-btn">
+              <img src="images/icon-cart.svg" class="bottomCart" /> Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
